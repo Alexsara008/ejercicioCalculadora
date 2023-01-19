@@ -5,38 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+
+    <style>
+
+        body{
+            background-color: blanchedalmond;
+        }
+
+        .maininput{
+            font-size: 80px;
+            color: antiquewhite;
+            font-weight: 400;
+        }
+
+        .calcu{
+            margin: auto;
+            background-color: black;
+            border: 2px solid whitesmoke;
+            width: 26%;
+            height: 610px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px;
+
+        }
+        
+        .maininput{
+            background-color: black ;
+            border: 1px solid grey;
+            height: 110px;
+            width: 98%;
+        }
+
+        .numeroBtn{
+            padding: 30px 35px;
+            border-radius: 50%;
+            font-size: x-large;
+            font-weight: 600;
+
+        }
+
+        .numeroBtn:hover{
+            background-color: rgb(209, 230, 241);
+            color: blue;
+        }
+
+
+        .signoBtn{
+            padding: 30px 35px;
+            border-radius: 10%;
+            font-size: x-large;
+            background-color: rgb(128, 217, 250);
+        }
+
+        .signoBtn:hover{
+            background-color: aqua ;
+        }
+
+        .c{
+            padding: 30px 35px;
+            border-radius: 50%;
+            font-size: x-large;
+        }
+
+        .equal{
+            padding: 30px 35px;
+            border-radius: 10%;
+            font-size: x-large;
+            background-color: rgb(235, 79, 79);
+        }
+
+        .equal:hover{
+            background-color: brown;
+        }
+
+    </style>
 </head>
 <body>
 
     <div class="calcu">
         <form action="" method="post" >
-
+            <br>
             <!-- mostrar el resultado -->
-            <input type="text" class="maininput"> <br>
+            <input type="text" class="maininput"> <br> <br>
 
             <!-- primera fila del 7,8,9,+ -->
             <input type="submit" class="numeroBtn" name="num" value="7" >
             <input type="submit" class="numeroBtn" name="num" value="8" >
             <input type="submit" class="numeroBtn" name="num" value="9" >
-            <input type="submit" class="signoBtn" name="op" value="+" > <br>
+            <input type="submit" class="signoBtn" name="op" value="+" > <br> <br>
 
             <!-- segunda fila -->
             <input type="submit" class="numeroBtn" name="num" value="4" >
             <input type="submit" class="numeroBtn" name="num" value="5" >
             <input type="submit" class="numeroBtn" name="num" value="6" >
-            <input type="submit" class="signoBtn" name="op" value="-" > <br>
+            <input type="submit" class="signoBtn" name="op" value="-" > <br> <br>
 
             <!-- tercera fila -->
             <input type="submit" class="numeroBtn" name="num" value="1" >
             <input type="submit" class="numeroBtn" name="num" value="2" >
             <input type="submit" class="numeroBtn" name="num" value="3" >
-            <input type="submit" class="signoBtn" name="op" value="*" > <br>
+            <input type="submit" class="signoBtn" name="op" value="*" > <br> <br>
 
             <!-- última fila para el igual, cer, punto -->
-            <input type="submit" class="numeroBtn" name="num" value="c" >
+            <input type="submit" class="c" name="num" value="c" >
             <input type="submit" class="numeroBtn" name="num" value="0" >
-            <input type="submit" class="numeroBtn" name="num" value="." >
-            <input type="submit" class="signoBtn" name="equal" value="=" > <br>
+            <input type="submit" class="equal" name="equal" value="=" >
+            <input type="submit" class="signoBtn" name="op" value="/" > <br> <br>
         </form>
     </div>
     
