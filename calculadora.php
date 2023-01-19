@@ -1,3 +1,53 @@
+<?php 
+    $cookie_name1 ="num";
+    $cookie_valor1="";
+    $cookie_name2 ="op";
+    $cookie_valor2="";
+
+    if(isset($_POST['num']))
+    {
+        $num=$_POST['input'].$_POST['num'] ;
+    }
+    else{
+        $num="";
+    }
+    if(isset($_POST['op']))
+    {
+        $cookie_valor1=$_POST['input'];
+        setcookie($cookie_name1, $cookie_valor1, time()+(86400 * 30), "/");
+
+        $cookie_valor2=$_POST['op'];
+        setcookie($cookie_name2, $cookie_valor2, time()+(86400 * 30), "/");
+        $num="";
+
+
+    }
+    if(isset($_POST['equal']))
+    {
+        $num=$_POST['input'];
+        switch($_COOKIE['op'])
+        {
+
+            case "+":
+                $result=$_COOKIE['num']+$num;
+                break;
+                case "-":
+                    $result=$_COOKIE['num']-$num;
+                    break;
+                    case "*":
+                        $result=$_COOKIE['num']*$num;
+                        break;
+                        case "/":
+                            $result=$_COOKIE['num']/$num;
+                            break;
+
+        }
+
+        $num=$result;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,6 +115,12 @@
             padding: 30px 35px;
             border-radius: 50%;
             font-size: x-large;
+            background-color: red;
+        }
+
+        .c:hover{
+            background-color: red ;
+            color: whitesmoke;
         }
 
         .equal{
@@ -86,7 +142,7 @@
         <form action="" method="post" >
             <br>
             <!-- mostrar el resultado -->
-            <input type="text" class="maininput"> <br> <br>
+            <input type="text" class="maininput" name="input" value="<?php echo @$num ?>" > <br> <br>
 
             <!-- primera fila del 7,8,9,+ -->
             <input type="submit" class="numeroBtn" name="num" value="7" >
@@ -110,7 +166,7 @@
             <input type="submit" class="c" name="num" value="c" >
             <input type="submit" class="numeroBtn" name="num" value="0" >
             <input type="submit" class="equal" name="equal" value="=" >
-            <input type="submit" class="signoBtn" name="op" value="/" > <br> <br>
+            <input type="submit" class="signoBtn" name="op" value="/" >
         </form>
     </div>
     
