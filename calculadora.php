@@ -169,6 +169,42 @@
             <input type="submit" class="signoBtn" name="op" value="/" >
         </form>
     </div>
-    
+
+
+     <!-- inicio del footer -->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.freepik.es%2Ffotos-vectores-gratis%2Fcalculadora-teclado&psig=AOvVaw3vHwloOtMJafPo5noYPbTf&ust=1674525756800000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCNDfstnM3PwCFQAAAAAdAAAAABAE" alt="Logo de SLee Dw" height="50px" width="70 px">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>EQUIPO</h2>
+                <p>Proyecto Calculadora - CBSPAT</p>
+                <p>Latacunga - Ecuador</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://chrome.google.com/webstore/detail/calculator/joodangkbfjnajiiifokapkpmhfnpleo?hl=es" class="fa fa-facebook"></a>
+                    <a href="https://chrome.google.com/webstore/detail/calculator/joodangkbfjnajiiifokapkpmhfnpleo?hl=es" class="fa fa-instagram"></a>
+                    <a href="https://chrome.google.com/webstore/detail/calculator/joodangkbfjnajiiifokapkpmhfnpleo?hl=es" class="fa fa-twitter"></a>
+                    <a href="https://chrome.google.com/webstore/detail/calculator/joodangkbfjnajiiifokapkpmhfnpleo?hl=es" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>GRUPO CALCULCADORA</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- fin del footer -->
+
+
 </body>
+
+
+
 </html>
