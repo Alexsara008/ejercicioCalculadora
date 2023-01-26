@@ -267,6 +267,11 @@
     </footer>
     <!-- fin del footer -->
 
+    <!-- Prueba de pull -->
+
+    <h1>hola</h1>
+    <p>Prueba de pull</p>
+
 
 </body>
 
